@@ -21,11 +21,13 @@ function FormContainer() {
 
   return (
     <div className="row justify-content-center pt-5">
-      <div className="col-lg-6 col-md-8 pt-5">
+      <div className="col-lg-8 col-md-8 pt-5">
         <Header steps={steps} activeStep={activeStep} />
 
+        <div className="col-10 mx-auto">
         <FormContent activeStep={activeStep}/>
-        <div className="mt-4 d-grid gap-2 col-8 mx-auto">
+        </div>  
+        <div className="mt-4 d-grid gap-2 col-6 mx-auto">
           <button className="btn btn-primary" type="button" onClick={handleNext} >
             Next
           </button>

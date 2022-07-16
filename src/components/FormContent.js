@@ -1,4 +1,5 @@
 import React from "react";
+import CustomCard from "./CustomCard";
 
 const FormContent = (props) => {
   const { activeStep } = props;
@@ -78,30 +79,34 @@ const FormContent = (props) => {
               <p>We will streamline your experience accordingly.</p>
             </div>
 
-            <div className="mt-5 row col-8 mx-auto">
-              <div className="col-6">
-                <div className="card" style={{}}>
-                  <div className="card-body">
-                    <h6 className="card-title">For myself</h6>
-                    <p className="card-text">
-                      With supporting text below as a natural lead-in to
-                      additional content.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-6">
-                <div className="card" style={{}}>
-                  <div className="card-body">
-                    <h5 className="card-title">Special title treatment</h5>
-                    <p className="card-text">
-                      With supporting text below as a natural lead-in to
-                      additional content.
-                    </p>
-                  </div>
-                </div>
-              </div>
+            <div className="row justify-content-center">
+            <CustomCard/>
+            <CustomCard/>
             </div>
+            {/* <div className="mt-5 row col-8 mx-auto">
+              <div className="col-6">
+                <div className="card">
+                  <div className="card-body">
+                    <img src={userIcon} className="icon-2 mb-3"></img>
+                    <h5 className="card-title">For myself</h5>
+                    <p className="card-text fw-light fs-6">
+                      Write better. Think more clearly. Stay organized
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-6">
+                <div className="card" style={{}}>
+                  <div className="card-body">
+                    <img src={userGroup} className="icon-2 mb-3"></img>
+                    <h5 className="card-title">With my team</h5>
+                    <p className="card-text fw-light">
+                      {"Wikis, docs, tasks & projects, all in one place."}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div> */}
           </>
         );
     }

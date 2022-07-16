@@ -1,1 +1,13 @@
-
+body{
+    font-family: 'Inter', sans-serif;
+}
+.purple{
+    background: #6610f2;
+    color: white;
+}
+.icon-2 {
+    height: 2vh;
+}
+.icon-3 {
+    height: 3vh;
+}
