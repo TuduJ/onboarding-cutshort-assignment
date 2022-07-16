@@ -3,7 +3,7 @@ import { Box, Step, StepLabel, Stepper } from "@mui/material";
 import logo from "../logo.svg";
 
 const Header = (props) => {
-  const { steps } = props;
+  const { steps, activeStep } = props;
   return (
     <div className="mt-5">
       <div className="d-flex justify-content-center">
@@ -11,7 +11,7 @@ const Header = (props) => {
       </div>
       <div className=" mt-3 d-flex justify-content-center">
         <Box sx={{ width: "60%" }}>
-          <Stepper>
+          <Stepper activeStep={activeStep}>
             {steps.map((label) => {
               return (
                 <Step key={label}>
