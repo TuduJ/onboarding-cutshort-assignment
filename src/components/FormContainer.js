@@ -27,16 +27,12 @@ const FormContainer = () => {
     switch(activeStep){
 
     }
-    if(activeStep < steps.length) {
+
+    if(activeStep < steps.length-1) {
       setActiveStep(activeStep + 1);
     }
   }
 
-  const handlePrev = () => {
-    if(activeStep > 0){
-      setActiveStep(activeStep - 1);
-    }
-  }
 
   return (
     <div className="row justify-content-center pt-5">

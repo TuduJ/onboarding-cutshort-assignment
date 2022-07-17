@@ -78,9 +78,10 @@ const FormContent = (props) => {
         return (
           <>
             <div className="row justify-content-center mt-4">
-              {cardData.map((item) => {
+              {cardData.map((item, key) => {
                 return (
                   <CustomCard
+                    key={key}
                     id={item.id}
                     icon={item.icon}
                     heading={item.heading}
