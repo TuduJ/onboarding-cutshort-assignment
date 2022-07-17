@@ -81,7 +81,7 @@ const FormContent = (props) => {
               {cardData.map((item) => {
                 return (
                   <CustomCard
-                    key={item.id}
+                    id={item.id}
                     icon={item.icon}
                     heading={item.heading}
                     description={item.description}

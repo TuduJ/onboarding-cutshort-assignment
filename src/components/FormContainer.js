@@ -14,6 +14,10 @@ const FormContainer = () => {
       workspaceName: "",
       companyURL: "",
   });
+  const [selectedCardData, setSelectedCardData] = useState({
+    individual: false,
+    team: false,
+  });
 
   const changetext = (key) => (event) => {
     setUserData({...userData, [key] : event.target.value});
@@ -43,9 +47,6 @@ const FormContainer = () => {
         <FormContent activeStep={activeStep} handleNext={handleNext} userData={userData} changetext={changetext}/>
         </div>  
         <div className="mt-4 d-grid gap-2 col-lg-6 col-sm-8 col-xs-10 mx-auto">
-          {/* <button className="btn btn-primary" type="button" onClick={handlePrev} >
-            Previous
-          </button> */}
         </div>
       </div>
     </div>
